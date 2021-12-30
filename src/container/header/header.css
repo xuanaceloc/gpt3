@@ -1,0 +1,141 @@
+.gpt3__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gpt3__header_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.gpt3__header_content > h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+}
+
+.gpt3__header_content-desc {
+    color: #81AFDD;
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    margin: 30px 0;
+}
+
+.gpt3__header_content-input {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.gpt3__header_content-input input{
+    flex: 1;
+    height: 60px;
+    background: #052D56;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.gpt3__header_content-input button {
+    width: 174px;
+    height: 60px;
+    background: #FF4820;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.gpt3__header_content-input button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.gpt3__header_content-people {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.gpt3__header_content-people img {
+    height: 36px;
+    object-fit: contain;
+}
+
+.gpt3__header_content-people p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+
+.gpt3__header_image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpt3__header_image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width : 1050px) {
+    .gpt3__header {
+        flex-direction: column;
+    }
+
+    .gpt3__header_image {
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width : 550px) {
+    .gpt3__header {
+        align-items: unset;
+    }
+
+    .gpt3__header_content > h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .gpt3__header_content-desc {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+    .gpt3__header_content-input input{
+        font-size: 16px;
+    }
+
+    .gpt3__header_content-input button {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .gpt3__header_content-people {
+        flex-direction: column;
+    }
+    .gpt3__header_content-people p {
+        margin: 0;
+    }
+}

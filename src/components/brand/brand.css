@@ -1,0 +1,32 @@
+.gpt3__brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+
+    background:-moz-radial-gradient(ellipse at 14% 5%, rgba(3, 20, 40, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background:-webkit-radial-gradient(ellipse at 14% 5%, rgba(3, 20, 40, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background:-o-radial-gradient(ellipse at 14% 5%, rgba(3, 20, 40, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background:-ms-radial-gradient(ellipse at 14% 5%, rgba(3, 20, 40, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background:radial-gradient(ellipse at 14% 5%, rgba(3, 20, 40, 1) 0%, rgba(4, 12, 24, 1) 100%);
+}
+
+.gpt3__brand__list {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding : 20px 0;
+
+}
+
+.gpt3__brand__list li {
+    margin: 1rem;
+}
+
+.gpt3__brand__list li img {
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,194 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+
+    & .links {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 1;
+
+        &__logo {
+            width: 62.56px;
+            height: 16.02px;
+            & > img {
+                width: 62.56px;
+                height: 16.02px;
+            }
+        }
+
+        &__container {
+            display: flex;
+            list-style: none;
+            margin-left: 20px;
+            
+            &  > li > a {
+                color: #fff;
+                display: block;
+                height: 25px;
+                padding: 0 10px;
+                margin: 0 10px;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                transition: 0.25s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    & .sign {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 25px;
+
+        & > span {
+            color: #fff;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        &__btn {
+            padding: 8px 20px;
+            background: #FF4820;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            margin-right: 20px;
+            cursor: pointer;
+            &:hover {
+                filter: brightness(1.2);
+            }
+        }
+    }
+
+    & .menu {
+        &_icon {
+            position: relative;
+            margin-left: 8px;
+            color: #fff;
+            font-size: 24px;
+            & > div {
+                position: absolute;
+                top: calc(100% + 20px);
+                right: 0;
+                background-color: var( --color-footer);
+                width: 170px;
+                padding: 10px 10px;
+                border-radius: 8px;
+                transition: 0.25s;
+            }
+        }
+        &__container {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+        
+            &  > li > a {
+                color: #fff;
+                display: block;
+                height: 25px;
+                padding: 0 10px;
+                margin: 8px 0;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                transition: 0.25s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        & .sign {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            height: fit-content;
+            margin-right: -5px;
+
+            & > span {
+                color: #fff;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                cursor: pointer;
+            }
+    
+            &__btn {
+                padding: 10px 24px;
+                background: #FF4820;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                color: #fff;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                margin-top: 10px;
+                cursor: pointer;
+                &:hover {
+                    filter: brightness(1.2);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1050px) {
+    .navbar {
+        padding: 2rem;
+        & .links__container {
+            display: none;
+        }
+
+        & .menu {
+            & .sign {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .navbar {
+        padding: 2rem;
+
+        & .sign {
+            display: none;
+        }
+        & .menu {
+            & .sign {
+                display: flex;
+            }
+        }
+    }
+}
+
+// @media screen and (max-width : 550px) {
+//     .navbar {
+      
+//     }
+// }
